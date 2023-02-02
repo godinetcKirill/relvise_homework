@@ -10,7 +10,7 @@
 :root {
   --primary-text-color: #252b42;
   --second-text-color: #737373;
-  --primary-bg-color:#17213C;
+  --primary-bg-color: #17213c;
 }
 a {
   text-decoration: none;
@@ -145,9 +145,13 @@ body {
 .page__whoweare {
 }
 .page__clients:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .page__subscribe {
+}
+.page__getintouch {
+}
+.page__contact {
 }
 /* --------------------------------Header-block--------------------------------спільні стилі для однакових блоків заголовків */
 .header-block {
@@ -632,132 +636,414 @@ body {
 /* -----------------------clients------------------------ */
 
 .clients {
-    padding: 50px 0px;
+  padding: 50px 0px;
 }
-@media screen and (max-width: 767px){
-    .clients {
+@media screen and (max-width: 767px) {
+  .clients {
     padding: 30px 0px;
-}
+  }
 }
 .clients__container {
 }
 
 .clients__items {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .client__item {
-    padding: 8px 15px;
-    flex: 0 1 16.6667%;
-    text-align: center;
-    min-width: 140px;
+  padding: 8px 15px;
+  flex: 0 1 16.6667%;
+  text-align: center;
+  min-width: 140px;
 }
-.client__item img{
-    max-width: 100%;
+.client__item img {
+  max-width: 100%;
 }
 /* ----------------------Subscribe form----------------------------------------------------- */
 
 .subscribe {
-    position: relative;
-    padding-bottom: 20px;
+  position: relative;
+  padding-bottom: 20px;
 }
-.subscribe::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-     bottom: 0;
-     left: 0;
-     height: 77px;
-    background: #252B42;
+.subscribe::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 77px;
+  background: #252b42;
 }
 .subscribe__container {
 }
 
 .subscribe__body {
-    position: relative;
-    z-index: 2;
-    padding: 30px 50px;
-    align-items: center;
-    background-color: var(--primary-bg-color);
-    border-radius: 8px;
+  position: relative;
+  z-index: 2;
+  padding: 30px 50px;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  border-radius: 8px;
 }
-@media screen and (min-width:1070px) {
-    .subscribe__body{
- margin: 0px 30px;
-   
-    }
-    
+@media screen and (min-width: 1070px) {
+  .subscribe__body {
+    margin: 0px 30px;
+  }
 }
-@media screen and (min-width:810px) {
-    .subscribe__body{
- justify-content: space-between;
-  display: flex;
-    }
-    .subscribe__title{
-        max-width: 266px;
-    }
+@media screen and (min-width: 810px) {
+  .subscribe__body {
+    justify-content: space-between;
+    display: flex;
+  }
+  .subscribe__title {
+    max-width: 266px;
+  }
 }
 .subscribe__title {
-    font-weight: 700;
-font-size: 24px;
-line-height: 133%;
-letter-spacing: 0.1px;
-    color: #ffff;
-  
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: #ffff;
 }
-@media screen and (max-width:810px){
-    .subscribe__title{
-        margin-bottom: 20px;
-    }
-    .subscribe__body{
-        margin: 0px -15px;
-         padding: 20px 15px; 
-    }
-    .subscribe__button{
-        padding: 0px 15px;
-    }
-    .subscribe__input{
-        padding: 0px 15px;
-    }
+@media screen and (max-width: 810px) {
+  .subscribe__title {
+    margin-bottom: 20px;
+  }
+  .subscribe__body {
+    margin: 0px -15px;
+    padding: 20px 15px;
+  }
+  .subscribe__button {
+    padding: 0px 15px;
+  }
+  .subscribe__input {
+    padding: 0px 15px;
+  }
 }
 .subscribe__form {
-    flex: 0 1 50%;
-    display: flex;
-    align-items: center;
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
 }
 .subscribe__input {
-    width: 100%;
-    flex: 1 1 auto;
-    min-height: 58px;
-    padding: 0px 20px;
-   border-right: 0;
-    background: #F9F9F9;
-    box-sizing: border-box;
-border: 1px solid #E6E6E6;
-border-radius: 5px 0 0 5px;
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 58px;
+  padding: 0px 20px;
+  border-right: 0;
+  background: #f9f9f9;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px 0 0 5px;
 }
 
-.subscribe__input:focus{
-    color: black;
-   
-    outline: none;
+.subscribe__input:focus {
+  color: black;
+
+  outline: none;
 }
 .subscribe__button {
-   background-color: transparent;
-border: 1px solid #E6E6E6;
-border-radius: 0px 5px 5px 0px;
-display: flex;
-min-height: 58px;
-justify-content: center;
-align-items: center;
-text-align: center;
-color: #ffff;
-padding: 0px 22px;
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  min-height: 58px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffff;
+  cursor: pointer;
+  padding: 0px 22px;
 }
 .subscribe__button:hover,
-.subscribe__button:focus{
-    background-color: #FF7B47;
+.subscribe__button:focus {
+  background-color: #ff7b47;
 }
+/* -----------------------------get-in-touch--------------------------------- */
+
+.getintouch {
+  padding: 80px 0px 135px 0px;
+}
+.getintouch__container {
+}
+
+.getintouch__header {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 992px) {
+  .getintouch__header {
+    margin-bottom: 50px;
+  }
+  .getintouch {
+    padding: 50px 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .getintouch__header {
+    margin-bottom: 30px;
+  }
+}
+
+.getintouch__items {
+  margin: 0px -15px;
+}
+@media screen and (min-width: 992px) {
+  .getintouch__items {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+}
+.getintouch__item {
+  flex: 0 1 33.333%;
+}
+
+.item-getintouch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(217, 222, 235);
+  padding: 50px 15px;
+  border-radius: 10px;
+}
+.item-getintouch_active {
+  padding: 80px 15px;
+  background: var(--primary-bg-color);
+  color: #f9f9f9;
+}
+.item-getintouch > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.item-getintouch__icon {
+}
+
+.item-getintouch__emails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-getintouch__email {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: inherit;
+}
+.item-getintouch__email:hover {
+  text-decoration: underline;
+  color: #ff7b47;
+}
+.item-getintouch__label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.item-getintouch__button {
+  border: 1px solid #ff7b47;
+  color: #ff7b47;
+  border-radius: 5px;
+  font-weight: 600;
+  min-height: 44px;
+  display: flex;
+  justify-content: center;
+  line-height: 142%;
+  text-align: center;
+  align-items: center;
+  padding: 5px 20px;
+  transition: all 250ms ease-in;
+}
+.item-getintouch__button:hover {
+  background-color: #ff7b47;
+  color: #f9f9f9;
+}
+
+/* ------------page-contact----------------------------- */
+.page__contact {
+}
+.contact {
+  background-color: #ffff;
+  padding: 42px 0px;
+}
+.contact__container {
+}
+
+@media screen and (min-width: 768px) {
+  .contact__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact__content {
+    padding: 0px 20px 0px 0px;
+  }
+}
+.contact__content {
+  padding: 0px 0px 20px 0px;
+}
+.contact__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+}
+.contact__title:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contact__text {
+  color: var(--second-text-color);
+  line-height: 142%;
+}
+.contact__button {
+  display: flex;
+  min-height: 58px;
+  background: #ff7b47;
+  color: #e6e6e6;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+.contact__button:hover {
+  background-color: #e6e6e6;
+  color: #ff7b47;
+}
+
 /* ------------------------------------------footer------------------------------------------- */
+.footer {
+}
+.footer__row{
+  display: flex;
+  margin: 0px -15px;
+  flex-wrap: wrap;
+  
+}
+.footer__top {
+  padding: 35px 0px;
+  background-color: #17213C;
+}
+.footer__main {
+
+}
+
+.footer__column {
+  padding: 15px 15px;
+  flex: 0 1 16.667%;
+  color: #ffff;
+ 
+ 
+}
+@media screen and (max-width:992px) {
+ .footer__column{
+  flex: 0 1 25%;
+ } 
+  .footer__column:last-child{
+  flex: 1 1 100%;
+}
+}
+@media screen and (max-width:992px) {
+ .footer__column{
+  flex: 0 1 50%;
+ } 
+  
+}
+.footer__column:last-child{
+  flex: 0 1 33.334%;
+}
+.footer__lebel {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0px 0px 20px 0px;
+ 
+}
+.footer__menu {
+}
+
+.menu-footer {
+}
+.menu-footer__list {
+}
+.menu-footer__item {
+}
+.menu-footer__item:not(:last-child){
+  margin: 0px 0px 10px 0px ;
+}
+.menu-footer__link {
+  color: #e6e6e6;
+  letter-spacing: 0.2px;
+  line-height: 171%;
+  display: inline-block;
+}
+.menu-footer__link:hover{
+  text-decoration: underline;
+}
+
+.footer__contacts {
+}
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-footer__item {
+  padding: 0px 0px 0px 34px;
+  display: flex;
+  align-items: center;
+ min-height: 30px;
+ color: #ffff;
+ line-height: 142%;
+ 
+}
+.contacts-footer__item:hover{
+  text-decoration: underline;
+}
+.contacts-footer__item:not(:last-child){
+  margin: 0px 0px 12px 0px;
+}
+.contact-footer__items_phone {
+  background: url(./image-relvise/footer/logo1.svg) 0 0 no-repeat;
+}
+.contact-footer__items_map {
+  background: url(./image-relvise/footer/logo2.svg) 0 0 no-repeat;
+}
+.contact-footer__items_email {
+  background: url(./image-relvise/footer/logo3.svg) 0 0 no-repeat;
+}
+
+.footer__bottom {
+  padding: 25px 0px;
+}
+  .footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width:767px){
+.footer__container {
+  flex-direction: column;
+}
+.footer__copy{
+  margin: 0px 0px 15px 0px;
+  text-align: center;
+}
+}
+.footer__copy {
+  color: var(--second-text-color);
+  line-height: 170%;
+  
+}
+.footer__social {
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.social__item:not(:last-child) {
+  margin: 0px 20px 0px 0px;
+}
